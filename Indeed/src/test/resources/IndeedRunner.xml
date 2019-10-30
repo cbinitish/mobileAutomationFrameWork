@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android test suite for Pages">
+
+    <parameter name="OS" value="android"/>
+    <parameter name="deviceName" value="Android SDK_build_for_x86"/>
+    <parameter name="version" value="9"/>
+    <parameter name="appiumPort" value="localhost:4723"/>
+    <parameter name="appPackage" value="com.indeed.android.jobsearch"/>
+    <parameter name="appActivity" value="com.indeed.android.jobsearch.launch.LaunchActivity"/>
+
+    <test name="Home page" preserve-order="true">
+        <classes>
+            <class name="testLayer.SignUpPageTest"/>
+        </classes>
+    </test>
+</suite>
+
